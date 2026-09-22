@@ -9,7 +9,7 @@ styling, with zero client pressure.
 
 ## Status
 v2 built 2026-09-22. Renamed to **DOOMSDAY** — a war-room / doomsday-clock themed
-AI-threat monitor. Stack: plain HTML/CSS/JS (no framework). 7 live sectors via
+AI-threat monitor. Stack: plain HTML/CSS/JS (no framework). 8 live sectors via
 Google News + rss2json (30-day filter). Design: dark, Oswald/Inter/IBM Plex Mono,
 amber/red palette, live UTC clock + "89 sec to midnight" motif, DEFCON threat
 strip, per-sector threat coloring (Flashpoint = DEFCON 1 red).

@@ -14,6 +14,7 @@ const FEEDS = [
   { code: "05", title: "Flashpoint",    sub: "China / Taiwan & chips",   threat: 1, query: 'China Taiwan semiconductor OR chip export' },
   { code: "06", title: "Containment",   sub: "AI legislation",           threat: 3, query: 'AI regulation OR AI legislation OR AI executive order' },
   { code: "07", title: "The Oval",      sub: "Trump, AI-related only",   threat: 2, query: 'Trump AI OR Trump semiconductor OR Trump "artificial intelligence"' },
+  { code: "08", title: "Dead Hand",     sub: "AI safety & existential risk", threat: 1, query: 'AI safety OR AI alignment OR superintelligence OR existential risk' },
 ];
 
 // 2) MEDIA-BIAS MAP. Ratings reflect *common perception* (AllSides /
