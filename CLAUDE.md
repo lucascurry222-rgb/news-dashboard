@@ -18,11 +18,20 @@ Section renames: Capabilities->Critical Mass, Markets->Fallout Index,
 Musk->Rogue Actor, Resources->Fuel Rods, Geopolitics->Flashpoint,
 Policy->Containment, Trump->The Oval.
 
+## Media-bias feature (built 2026-09-22)
+- Each headline is tagged with its outlet's political lean using a ~90-outlet
+  BIAS map in app.js (common-perception / AllSides-style: L/LL/C/LR/R, else
+  Unrated). Outlet parsed from Google News "Headline - Publisher" titles.
+- Each sector shows a stacked SPECTRUM bar of its lean mix; a legend explains colors.
+- selectBalanced() round-robins across left/right/center/unrated so both sides
+  appear per sector when the feed contains them.
+- Known limitation: mainstream AI coverage skews center/lean-left, so some
+  sectors surface few right-leaning or strong-partisan outlets — the bar shows
+  this honestly rather than faking balance. To push more right-side coverage,
+  add outlets to BIAS or add dedicated single-outlet feeds.
+
 ## Planned next
-- **Media-bias bar**: show where each source lands on the political spectrum.
-  Caveat: Google News mixes outlets per column, so this needs either per-headline
-  outlet tagging (map outlet -> known lean) or switching some sectors to
-  single-outlet feeds. Discuss approach before building.
+- (open) Consider dedicated per-outlet feeds to guarantee spectrum coverage.
 
 ## Working notes
 _Update this file as decisions get made: stack, key features, client feedback,
