@@ -15,8 +15,10 @@ amber/red palette, live UTC clock + "89 sec to midnight" motif, DEFCON threat
 strip, per-sector threat coloring (Flashpoint = DEFCON 1 red).
 
 Section renames: Capabilities->Critical Mass, Markets->Fallout Index,
-Musk->Rogue Actor, Resources->Fuel Rods, Geopolitics->Flashpoint,
-Policy->Containment, Trump->The Oval.
+Musk->Rogue Actor, Policy->Containment, Trump->The Oval.
+Sectors (8): Critical Mass, Fallout Index, Rogue Actor, Cold War (merged
+energy/rare-earths + China/Taiwan/chips), Containment, The Oval, Dead Hand
+(AI safety/existential risk), The Culling (AI & job market).
 
 ## Media-bias feature (built 2026-09-22)
 - Each headline is tagged with its outlet's political lean using a ~90-outlet

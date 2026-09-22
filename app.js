@@ -10,11 +10,11 @@ const FEEDS = [
   { code: "01", title: "Critical Mass", sub: "New AI models & research", threat: 2, query: 'new AI model OR "artificial intelligence" breakthrough' },
   { code: "02", title: "Fallout Index", sub: "AI & tech stocks",         threat: 3, query: 'Nvidia OR AI stocks OR semiconductor stocks' },
   { code: "03", title: "Rogue Actor",   sub: "Elon Musk",                threat: 3, query: 'Elon Musk' },
-  { code: "04", title: "Fuel Rods",     sub: "Energy & rare earths",     threat: 3, query: 'rare earth minerals OR AI energy demand OR data center power' },
-  { code: "05", title: "Flashpoint",    sub: "China / Taiwan & chips",   threat: 1, query: 'China Taiwan semiconductor OR chip export' },
-  { code: "06", title: "Containment",   sub: "AI legislation",           threat: 3, query: 'AI regulation OR AI legislation OR AI executive order' },
-  { code: "07", title: "The Oval",      sub: "Trump, AI-related only",   threat: 2, query: 'Trump AI OR Trump semiconductor OR Trump "artificial intelligence"' },
-  { code: "08", title: "Dead Hand",     sub: "AI safety & existential risk", threat: 1, query: 'AI safety OR AI alignment OR superintelligence OR existential risk' },
+  { code: "04", title: "Cold War",      sub: "China, chips & rare earths", threat: 1, query: 'chip war OR rare earth minerals OR Taiwan semiconductor' },
+  { code: "05", title: "Containment",   sub: "AI legislation",           threat: 3, query: 'AI regulation OR AI legislation OR AI executive order' },
+  { code: "06", title: "The Oval",      sub: "Trump, AI-related only",   threat: 2, query: 'Trump AI OR Trump semiconductor OR Trump "artificial intelligence"' },
+  { code: "07", title: "Dead Hand",     sub: "AI safety & existential risk", threat: 1, query: 'AI safety OR AI alignment OR superintelligence OR existential risk' },
+  { code: "08", title: "The Culling",   sub: "AI & the job market",      threat: 2, query: 'AI layoffs OR AI job cuts OR AI automation workforce OR AI replacing jobs' },
 ];
 
 // 2) MEDIA-BIAS MAP. Ratings reflect *common perception* (AllSides /
