@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+# build output
+dist/
+build/
+.next/
+# environment secrets — never commit these
+.env
+.env.local
+# os / editor cruft
+.DS_Store
+.vscode/
+*.log
