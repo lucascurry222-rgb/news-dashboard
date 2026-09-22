@@ -3,26 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Dashboard</title>
+  <title>DOOMSDAY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <h1>AI Dashboard</h1>
-      <p id="updated" class="updated">Loading&hellip;</p>
+  <!-- ===== Command bar ===== -->
+  <header class="cmd">
+    <div class="cmd__brand">
+      <div class="wordmark">DOOMSDAY</div>
+      <div class="tagline">Global AI threat monitor // all feeds live</div>
     </div>
-    <button id="refresh" class="refresh">Refresh</button>
+
+    <div class="cmd__clock" title="The Doomsday Clock currently stands at 89 seconds to midnight.">
+      <svg class="clockface" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" class="dial" />
+        <line x1="50" y1="8"  x2="50" y2="16" class="tick" />
+        <line x1="92" y1="50" x2="84" y2="50" class="tick" />
+        <line x1="50" y1="92" x2="50" y2="84" class="tick" />
+        <line x1="8"  y1="50" x2="16" y2="50" class="tick" />
+        <line x1="50" y1="50" x2="50" y2="20" class="hand hand--min" />
+        <line x1="50" y1="50" x2="57" y2="16" class="hand hand--sec" />
+        <circle cx="50" cy="50" r="3.2" class="pivot" />
+      </svg>
+      <div class="clock__read">
+        <div class="clock__mid"><b>89</b> sec to midnight</div>
+        <div id="utc" class="clock__utc">--:--:-- UTC</div>
+      </div>
+    </div>
+
+    <button id="refresh" class="refresh">Re-scan</button>
   </header>
 
-  <!-- The columns of news get built by JavaScript and dropped in here -->
+  <!-- ===== Threat level strip ===== -->
+  <div class="threatstrip">
+    <div class="defcon" aria-label="Threat level">
+      <span class="seg" data-lvl="5">5</span>
+      <span class="seg" data-lvl="4">4</span>
+      <span class="seg" data-lvl="3">3</span>
+      <span class="seg active" data-lvl="2">2</span>
+      <span class="seg" data-lvl="1">1</span>
+    </div>
+    <div class="threatstrip__status">
+      <span class="dot"></span>
+      <span id="updated">Standing by&hellip;</span>
+    </div>
+  </div>
+
+  <!-- The threat columns get built by JavaScript and dropped in here -->
   <main id="board" class="board"></main>
 
   <footer class="foot">
-    Edit the <code>FEEDS</code> list in <code>app.js</code> to add your own sources.
+    Edit the <code>FEEDS</code> list in <code>app.js</code> to retask a sector.
   </footer>
 
-  <!-- Load our JavaScript last, so the page structure exists before it runs -->
   <script src="app.js"></script>
 </body>
 </html>
