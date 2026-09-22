@@ -8,7 +8,8 @@ filter by topic.
 styling, with zero client pressure.
 
 ## Status
-Planning — scaffolded 2026-09-21, no code yet. Stack not chosen.
+Working v1 built 2026-09-22. Stack: plain HTML/CSS/JS (no framework).
+Live AI-news dashboard, 7 topic columns via Google News + rss2json.
 
 ## Working notes
 _Update this file as decisions get made: stack, key features, client feedback,

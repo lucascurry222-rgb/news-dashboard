@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>AI Dashboard</h1>
+      <p id="updated" class="updated">Loading&hellip;</p>
+    </div>
+    <button id="refresh" class="refresh">Refresh</button>
+  </header>
+
+  <!-- The columns of news get built by JavaScript and dropped in here -->
+  <main id="board" class="board"></main>
+
+  <footer class="foot">
+    Edit the <code>FEEDS</code> list in <code>app.js</code> to add your own sources.
+  </footer>
+
+  <!-- Load our JavaScript last, so the page structure exists before it runs -->
+  <script src="app.js"></script>
+</body>
+</html>
