@@ -34,6 +34,17 @@ energy/rare-earths + China/Taiwan/chips), Containment, The Oval, Dead Hand
 
 ## Planned next
 - (open) Consider dedicated per-outlet feeds to guarantee spectrum coverage.
+- **Article summarize button (PARKED 2026-09-22).** Blocked by architecture:
+  Google News gives opaque redirect links (news.google.com/rss/articles/CBMi...),
+  not real article URLs. Verified all client-side routes fail: proxy-fetch of the
+  link times out; the real URL is in NO rss2json field (link/guid/description/
+  content are all the Google redirect); Jina Reader (r.jina.ai) returns Google's
+  shell not the article; the article-ID is fully obfuscated (needs Google's
+  batchexecute POST, CORS-blocked). To ship summaries: (A) a serverless backend
+  (Cloudflare Worker) that resolves the link + fetches + summarizes [recommended,
+  and enables real AI summaries with an LLM key], or (B) switch sectors to direct
+  outlet RSS feeds (real URLs) at the cost of Google News topic-search. Do NOT
+  fabricate a summary from just the headline.
 
 ## Working notes
 _Update this file as decisions get made: stack, key features, client feedback,
